@@ -21,6 +21,9 @@
 		DCB358DD1D3F192A00D04B69 /* AKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D41D3F192A00D04B69 /* AKTabBarView.m */; };
 		DCB358DE1D3F192A00D04B69 /* UINavigationController+AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D61D3F192A00D04B69 /* UINavigationController+AKTabBarController.m */; };
 		DCB358DF1D3F192A00D04B69 /* UIViewController+AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D81D3F192A00D04B69 /* UIViewController+AKTabBarController.m */; };
+		DCB358E51D3F1D1400D04B69 /* FLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358E41D3F1D1400D04B69 /* FLTabBarController.m */; };
+		DCB358E81D3F274900D04B69 /* FLNetworkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358E71D3F274900D04B69 /* FLNetworkNavigationController.m */; };
+		DCB358EB1D3F27AA00D04B69 /* FLNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358EA1D3F27AA00D04B69 /* FLNetworkViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,12 @@
 		DCB358D61D3F192A00D04B69 /* UINavigationController+AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AKTabBarController.m"; sourceTree = "<group>"; };
 		DCB358D71D3F192A00D04B69 /* UIViewController+AKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AKTabBarController.h"; sourceTree = "<group>"; };
 		DCB358D81D3F192A00D04B69 /* UIViewController+AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AKTabBarController.m"; sourceTree = "<group>"; };
+		DCB358E31D3F1D1400D04B69 /* FLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLTabBarController.h; sourceTree = "<group>"; };
+		DCB358E41D3F1D1400D04B69 /* FLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLTabBarController.m; sourceTree = "<group>"; };
+		DCB358E61D3F274900D04B69 /* FLNetworkNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLNetworkNavigationController.h; sourceTree = "<group>"; };
+		DCB358E71D3F274900D04B69 /* FLNetworkNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLNetworkNavigationController.m; sourceTree = "<group>"; };
+		DCB358E91D3F27AA00D04B69 /* FLNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLNetworkViewController.h; sourceTree = "<group>"; };
+		DCB358EA1D3F27AA00D04B69 /* FLNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLNetworkViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,12 @@
 				DCB358C11D3E28A600D04B69 /* LaunchScreen.storyboard */,
 				DCB358C41D3E28A600D04B69 /* Info.plist */,
 				DCB358B31D3E28A600D04B69 /* Supporting Files */,
+				DCB358E31D3F1D1400D04B69 /* FLTabBarController.h */,
+				DCB358E41D3F1D1400D04B69 /* FLTabBarController.m */,
+				DCB358E61D3F274900D04B69 /* FLNetworkNavigationController.h */,
+				DCB358E71D3F274900D04B69 /* FLNetworkNavigationController.m */,
+				DCB358E91D3F27AA00D04B69 /* FLNetworkViewController.h */,
+				DCB358EA1D3F27AA00D04B69 /* FLNetworkViewController.m */,
 			);
 			path = FLPodsUsage;
 			sourceTree = "<group>";
@@ -275,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB358BB1D3E28A600D04B69 /* ViewController.m in Sources */,
+				DCB358E51D3F1D1400D04B69 /* FLTabBarController.m in Sources */,
 				DCB358D91D3F192A00D04B69 /* AKTab.m in Sources */,
 				DCB358B81D3E28A600D04B69 /* AppDelegate.m in Sources */,
 				DCB358DF1D3F192A00D04B69 /* UIViewController+AKTabBarController.m in Sources */,
@@ -283,6 +299,8 @@
 				DCB358B51D3E28A600D04B69 /* main.m in Sources */,
 				DCB358DA1D3F192A00D04B69 /* AKTabBar.m in Sources */,
 				DCB358DE1D3F192A00D04B69 /* UINavigationController+AKTabBarController.m in Sources */,
+				DCB358E81D3F274900D04B69 /* FLNetworkNavigationController.m in Sources */,
+				DCB358EB1D3F27AA00D04B69 /* FLNetworkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

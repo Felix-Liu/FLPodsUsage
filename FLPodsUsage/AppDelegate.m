@@ -7,16 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "FLTabBarController.h"
+#import "FLNetworkNavigationController.h"
+#import "FLNetworkViewController.h"
+
+static const CGFloat kTabBarHeight = 49.0f;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong, nonnull) FLTabBarController *mainTabBarController;
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window.rootViewController = self.mainTabBarController;
+    
     return YES;
 }
 
@@ -42,4 +54,24 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (FLTabBarController *)mainTabBarController {
+    if (_mainTabBarController == nil) {
+        _mainTabBarController = [[FLTabBarController alloc] initWithTabBarHeight:kTabBarHeight];
+        FLNetworkViewController *networkViewController = [[FLNetworkViewController alloc] init];
+        FLNetworkNavigationController *networkNavigationController = [[FLNetworkNavigationController alloc] initWithRootViewController:networkViewController];
+        _mainTabBarController.viewControllers = [@[networkNavigationController] mutableCopy];
+    }
+    return _mainTabBarController;
+}
+
+- (UIWindow *)window {
+    if (_window == nil) {
+        _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        [_window makeKeyAndVisible];
+    }
+    return _window;
+}
+
 @end
+
+NS_ASSUME_NONNULL_END
