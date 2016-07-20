@@ -14,6 +14,13 @@
 		DCB358BE1D3E28A600D04B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB358BC1D3E28A600D04B69 /* Main.storyboard */; };
 		DCB358C01D3E28A600D04B69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB358BF1D3E28A600D04B69 /* Assets.xcassets */; };
 		DCB358C31D3E28A600D04B69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB358C11D3E28A600D04B69 /* LaunchScreen.storyboard */; };
+		DCB358D91D3F192A00D04B69 /* AKTab.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358CD1D3F192A00D04B69 /* AKTab.m */; };
+		DCB358DA1D3F192A00D04B69 /* AKTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358CF1D3F192A00D04B69 /* AKTabBar.m */; };
+		DCB358DB1D3F192A00D04B69 /* AKTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCB358D01D3F192A00D04B69 /* AKTabBarController.bundle */; };
+		DCB358DC1D3F192A00D04B69 /* AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D21D3F192A00D04B69 /* AKTabBarController.m */; };
+		DCB358DD1D3F192A00D04B69 /* AKTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D41D3F192A00D04B69 /* AKTabBarView.m */; };
+		DCB358DE1D3F192A00D04B69 /* UINavigationController+AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D61D3F192A00D04B69 /* UINavigationController+AKTabBarController.m */; };
+		DCB358DF1D3F192A00D04B69 /* UIViewController+AKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358D81D3F192A00D04B69 /* UIViewController+AKTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,19 @@
 		DCB358BF1D3E28A600D04B69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCB358C21D3E28A600D04B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCB358C41D3E28A600D04B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB358CC1D3F192A00D04B69 /* AKTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTab.h; sourceTree = "<group>"; };
+		DCB358CD1D3F192A00D04B69 /* AKTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTab.m; sourceTree = "<group>"; };
+		DCB358CE1D3F192A00D04B69 /* AKTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBar.h; sourceTree = "<group>"; };
+		DCB358CF1D3F192A00D04B69 /* AKTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBar.m; sourceTree = "<group>"; };
+		DCB358D01D3F192A00D04B69 /* AKTabBarController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AKTabBarController.bundle; sourceTree = "<group>"; };
+		DCB358D11D3F192A00D04B69 /* AKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBarController.h; sourceTree = "<group>"; };
+		DCB358D21D3F192A00D04B69 /* AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarController.m; sourceTree = "<group>"; };
+		DCB358D31D3F192A00D04B69 /* AKTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AKTabBarView.h; sourceTree = "<group>"; };
+		DCB358D41D3F192A00D04B69 /* AKTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AKTabBarView.m; sourceTree = "<group>"; };
+		DCB358D51D3F192A00D04B69 /* UINavigationController+AKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+AKTabBarController.h"; sourceTree = "<group>"; };
+		DCB358D61D3F192A00D04B69 /* UINavigationController+AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+AKTabBarController.m"; sourceTree = "<group>"; };
+		DCB358D71D3F192A00D04B69 /* UIViewController+AKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AKTabBarController.h"; sourceTree = "<group>"; };
+		DCB358D81D3F192A00D04B69 /* UIViewController+AKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AKTabBarController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +93,7 @@
 		DCB358B21D3E28A600D04B69 /* FLPodsUsage */ = {
 			isa = PBXGroup;
 			children = (
+				DCB358CA1D3F18FC00D04B69 /* Pods */,
 				DCB358B61D3E28A600D04B69 /* AppDelegate.h */,
 				DCB358B71D3E28A600D04B69 /* AppDelegate.m */,
 				DCB358B91D3E28A600D04B69 /* ViewController.h */,
@@ -92,6 +113,34 @@
 				DCB358B41D3E28A600D04B69 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCB358CA1D3F18FC00D04B69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCB358CB1D3F192A00D04B69 /* AKTabBarController */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DCB358CB1D3F192A00D04B69 /* AKTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				DCB358CC1D3F192A00D04B69 /* AKTab.h */,
+				DCB358CD1D3F192A00D04B69 /* AKTab.m */,
+				DCB358CE1D3F192A00D04B69 /* AKTabBar.h */,
+				DCB358CF1D3F192A00D04B69 /* AKTabBar.m */,
+				DCB358D01D3F192A00D04B69 /* AKTabBarController.bundle */,
+				DCB358D11D3F192A00D04B69 /* AKTabBarController.h */,
+				DCB358D21D3F192A00D04B69 /* AKTabBarController.m */,
+				DCB358D31D3F192A00D04B69 /* AKTabBarView.h */,
+				DCB358D41D3F192A00D04B69 /* AKTabBarView.m */,
+				DCB358D51D3F192A00D04B69 /* UINavigationController+AKTabBarController.h */,
+				DCB358D61D3F192A00D04B69 /* UINavigationController+AKTabBarController.m */,
+				DCB358D71D3F192A00D04B69 /* UIViewController+AKTabBarController.h */,
+				DCB358D81D3F192A00D04B69 /* UIViewController+AKTabBarController.m */,
+			);
+			path = AKTabBarController;
 			sourceTree = "<group>";
 		};
 		E420CA31DBB36CC33DAF98AC /* Pods */ = {
@@ -164,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB358C31D3E28A600D04B69 /* LaunchScreen.storyboard in Resources */,
+				DCB358DB1D3F192A00D04B69 /* AKTabBarController.bundle in Resources */,
 				DCB358C01D3E28A600D04B69 /* Assets.xcassets in Resources */,
 				DCB358BE1D3E28A600D04B69 /* Main.storyboard in Resources */,
 			);
@@ -225,8 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB358BB1D3E28A600D04B69 /* ViewController.m in Sources */,
+				DCB358D91D3F192A00D04B69 /* AKTab.m in Sources */,
 				DCB358B81D3E28A600D04B69 /* AppDelegate.m in Sources */,
+				DCB358DF1D3F192A00D04B69 /* UIViewController+AKTabBarController.m in Sources */,
+				DCB358DD1D3F192A00D04B69 /* AKTabBarView.m in Sources */,
+				DCB358DC1D3F192A00D04B69 /* AKTabBarController.m in Sources */,
 				DCB358B51D3E28A600D04B69 /* main.m in Sources */,
+				DCB358DA1D3F192A00D04B69 /* AKTabBar.m in Sources */,
+				DCB358DE1D3F192A00D04B69 /* UINavigationController+AKTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
