@@ -14,11 +14,19 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - HandyFrame (1.1.1)
+  - YYCategories (1.0.3):
+    - YYCategories/no-arc (= 1.0.3)
+  - YYCategories/no-arc (1.0.3)
 
 DEPENDENCIES:
   - AFNetworking
+  - HandyFrame
+  - YYCategories
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HandyFrame: 4e95cc495e84e91f9434fe316f992ba4ee713e3a
+  YYCategories: 0fd4d9eb0994d8d0e355beb4081c8f7202a82b7b
 
 COCOAPODS: 0.39.0
