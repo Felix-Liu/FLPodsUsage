@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Aspects.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HandyFrame.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,11 +32,6 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>203C9B29DADFE39AD26F6A04413E7313</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>65D7C4200AE78113307580A9B81EA7CF</key>
 		<dict>
 			<key>primary</key>
@@ -42,7 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC3F5787A8C37DB0B75123A5BFBCCB8F</key>
+		<key>B83880529EE761B8A1B079C82492F263</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC9A0AF6D4571D059D2AF2422F2BD6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3B98D087C64B17647A3DD1E24DCF8D2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

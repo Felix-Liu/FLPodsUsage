@@ -7,12 +7,25 @@
 //
 
 #import "FLTabBarController.h"
+#import "FLNetworkNavigationController.h"
+#import "FLNetworkViewController.h"
 
 @interface FLTabBarController ()
 
 @end
 
 @implementation FLTabBarController
+
+- (instancetype)initWithTabBarHeight:(NSUInteger)height
+{
+    self = [super initWithTabBarHeight:height];
+    if (self) {
+        FLNetworkViewController *networkViewController = [[FLNetworkViewController alloc] init];
+        FLNetworkNavigationController *networkNavigationController = [[FLNetworkNavigationController alloc] initWithRootViewController:networkViewController];
+        self.viewControllers = [@[networkNavigationController] mutableCopy];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

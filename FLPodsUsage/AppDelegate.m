@@ -26,9 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    self.window.rootViewController = self.mainTabBarController;
-    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -57,9 +55,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (FLTabBarController *)mainTabBarController {
     if (_mainTabBarController == nil) {
         _mainTabBarController = [[FLTabBarController alloc] initWithTabBarHeight:kTabBarHeight];
-        FLNetworkViewController *networkViewController = [[FLNetworkViewController alloc] init];
-        FLNetworkNavigationController *networkNavigationController = [[FLNetworkNavigationController alloc] initWithRootViewController:networkViewController];
-        _mainTabBarController.viewControllers = [@[networkNavigationController] mutableCopy];
     }
     return _mainTabBarController;
 }
@@ -67,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UIWindow *)window {
     if (_window == nil) {
         _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        [_window makeKeyAndVisible];
+        _window.rootViewController = self.mainTabBarController;
     }
     return _window;
 }
