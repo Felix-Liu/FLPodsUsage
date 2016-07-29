@@ -1,0 +1,91 @@
+## 规则
+# 以斜杠“/“开头表示目录
+# 以星号“*”通配多个字符
+# 以问号“?”通配单个字符
+# 以方括号“[]”包含单个字符的匹配列表
+# 以叹号“!”表示不忽略(跟踪)匹配到的文件或目录
+
+## 示例
+# dir/* 忽略目录dir下的全部内容；不管是根目录下的/dir/目录，还是某个子目录/child/dir/目录，都会被忽略
+# /dir/* 忽略根目录下的/dir/目录的全部内容
+# /dir/ 过滤整个文件夹
+# *.zip 过滤所有.zip文件
+# !*.zip 将所有.zip文件添加到版本管理中
+# /dir/do.c 过滤某个具体文件
+# !/dir/one.txt 将某个文件添加到版本管理中
+# /* 忽略全部内容
+
+## 注意
+# 如果不慎在创建.gitignore文件之前就push了项目，那么即使在.gitignore文件中写入新的过滤规则，这些规则也不会起作用，Git仍然会对所有文件进行版本管理。
+# 所以在项目开始时就创建.gitignore文件，否则一旦push，处理起来会非常麻烦。
+
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+## 构建生成的目录
+build/
+DerivedData/
+
+## Various settings
+## 各种各样的设置
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+## 其它
+*.moved-aside
+*.xcuserstate
+.DS_Store
+
+## Obj-C/Swift specific
+## Obj-C/Swift特有的
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# 我们不推荐添加Pods目录到你的.gitignore文件中。不管怎样
+# you should judge for yourself, the pros and cons are mentioned at:
+# 你应该自己判断，优点和缺点都在下面的文章中被提及：
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# 建议不要在git仓库中保存截图。不管在何时使用fastlane都会重新生成截图。
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/screenshots
+
+# Code Injection
+# 代码注入
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# 使用代码注入工具注入代码后会生成一个/iOSInjectionProject文件夹
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
