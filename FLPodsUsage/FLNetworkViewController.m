@@ -8,6 +8,7 @@
 
 #import "FLNetworkViewController.h"
 #import "UIViewController+AKTabBarController.h"
+#import "UIViewController+FL.h"
 
 @interface FLNetworkViewController ()
 
@@ -29,9 +30,21 @@
     self.title = @"Network";
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self testMethod];
+    
+    [UIImage imageNamed:@"dfsklj"];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 /*

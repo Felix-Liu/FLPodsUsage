@@ -24,6 +24,9 @@
 		DCB358E51D3F1D1400D04B69 /* FLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358E41D3F1D1400D04B69 /* FLTabBarController.m */; };
 		DCB358E81D3F274900D04B69 /* FLNetworkNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358E71D3F274900D04B69 /* FLNetworkNavigationController.m */; };
 		DCB358EB1D3F27AA00D04B69 /* FLNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB358EA1D3F27AA00D04B69 /* FLNetworkViewController.m */; };
+		DCB359081D40CE5B00D04B69 /* CTViewControllerIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB359071D40CE5B00D04B69 /* CTViewControllerIntercepter.m */; };
+		DCB3590B1D41B19900D04B69 /* UIViewController+FL.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB3590A1D41B19900D04B69 /* UIViewController+FL.m */; };
+		DCB3590E1D41BCD200D04B69 /* FLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB3590D1D41BCD200D04B69 /* FLBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +62,12 @@
 		DCB358E71D3F274900D04B69 /* FLNetworkNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLNetworkNavigationController.m; sourceTree = "<group>"; };
 		DCB358E91D3F27AA00D04B69 /* FLNetworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLNetworkViewController.h; sourceTree = "<group>"; };
 		DCB358EA1D3F27AA00D04B69 /* FLNetworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLNetworkViewController.m; sourceTree = "<group>"; };
+		DCB359061D40CE5B00D04B69 /* CTViewControllerIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTViewControllerIntercepter.h; sourceTree = "<group>"; };
+		DCB359071D40CE5B00D04B69 /* CTViewControllerIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTViewControllerIntercepter.m; sourceTree = "<group>"; };
+		DCB359091D41B19900D04B69 /* UIViewController+FL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FL.h"; sourceTree = "<group>"; };
+		DCB3590A1D41B19900D04B69 /* UIViewController+FL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FL.m"; sourceTree = "<group>"; };
+		DCB3590C1D41BCD200D04B69 /* FLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLBaseViewController.h; sourceTree = "<group>"; };
+		DCB3590D1D41BCD200D04B69 /* FLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +111,7 @@
 		DCB358B21D3E28A600D04B69 /* FLPodsUsage */ = {
 			isa = PBXGroup;
 			children = (
+				DCB358F71D40A91200D04B69 /* Categories */,
 				DCB358CA1D3F18FC00D04B69 /* Pods */,
 				DCB358B61D3E28A600D04B69 /* AppDelegate.h */,
 				DCB358B71D3E28A600D04B69 /* AppDelegate.m */,
@@ -156,6 +166,19 @@
 				DCB358D81D3F192A00D04B69 /* UIViewController+AKTabBarController.m */,
 			);
 			path = AKTabBarController;
+			sourceTree = "<group>";
+		};
+		DCB358F71D40A91200D04B69 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DCB359061D40CE5B00D04B69 /* CTViewControllerIntercepter.h */,
+				DCB359071D40CE5B00D04B69 /* CTViewControllerIntercepter.m */,
+				DCB359091D41B19900D04B69 /* UIViewController+FL.h */,
+				DCB3590A1D41B19900D04B69 /* UIViewController+FL.m */,
+				DCB3590C1D41BCD200D04B69 /* FLBaseViewController.h */,
+				DCB3590D1D41BCD200D04B69 /* FLBaseViewController.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		E420CA31DBB36CC33DAF98AC /* Pods */ = {
@@ -289,6 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB3590B1D41B19900D04B69 /* UIViewController+FL.m in Sources */,
+				DCB359081D40CE5B00D04B69 /* CTViewControllerIntercepter.m in Sources */,
 				DCB358BB1D3E28A600D04B69 /* ViewController.m in Sources */,
 				DCB358E51D3F1D1400D04B69 /* FLTabBarController.m in Sources */,
 				DCB358D91D3F192A00D04B69 /* AKTab.m in Sources */,
@@ -296,6 +321,7 @@
 				DCB358DF1D3F192A00D04B69 /* UIViewController+AKTabBarController.m in Sources */,
 				DCB358DD1D3F192A00D04B69 /* AKTabBarView.m in Sources */,
 				DCB358DC1D3F192A00D04B69 /* AKTabBarController.m in Sources */,
+				DCB3590E1D41BCD200D04B69 /* FLBaseViewController.m in Sources */,
 				DCB358B51D3E28A600D04B69 /* main.m in Sources */,
 				DCB358DA1D3F192A00D04B69 /* AKTabBar.m in Sources */,
 				DCB358DE1D3F192A00D04B69 /* UINavigationController+AKTabBarController.m in Sources */,
